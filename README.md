@@ -1,4 +1,5 @@
 不知道具体对不对，不是专业的摄影人员，这些理论在Unity和Blender中通用
+要使用git lfs下载该项目/文档
 
 # Override
 ## Exposure
@@ -12,10 +13,9 @@
 
 Unity 在Mode为Fixed时, Fixed Exposure越高越暗，越低越亮
 
-<video id="video" controls="" preload="none">
-      <source id="mp4" src="./Video/Exposure 效果示范.mp4">
-      <p>Your user agent does not support the HTML5 Video element.</p>
-</video>
+````
+视频地址 ./Video/Exposure 效果示范.mp4
+````
 
 `Tips: `   
 **1.在Unity中过曝可以使用Tone mapping处理**  
@@ -30,6 +30,10 @@ Unity 在Mode为Fixed时, Fixed Exposure越高越暗，越低越亮
 ## Visual Environment 与 Sky
 **快速解读: 对天空盒的设置，Visual Environment可以配合特定Sky使用。**
 
+````
+视频地址 ./Video/Visual Environment 与 Sky 效果示范.mp4
+````
+
 ### 链接
 [Override-Visual-Environment](https://docs.unity3d.com/Packages/com.unity.render-pipelines.high-definition@7.2/manual/Override-Visual-Environment.html)  
 [Override-Gradient-Sky](https://docs.unity3d.com/Packages/com.unity.render-pipelines.high-definition@7.2/manual/Override-Gradient-Sky.html)  
@@ -42,6 +46,10 @@ Unity 在Mode为Fixed时, Fixed Exposure越高越暗，越低越亮
 **快速解读: 在光亮向周围扩散时不断变暗并去饱和度** 
 
 `渐晕是指与中心相比朝向图像边缘变暗和/或去饱和的术语` 
+
+````
+视频地址 ./Video/Vignette 效果示范.mp4
+````
 
 ### 链接
 - [Post-Processing-Vignette](https://docs.unity3d.com/Packages/com.unity.render-pipelines.high-definition@7.2/manual/Post-Processing-Vignette.html)
@@ -60,6 +68,10 @@ Unity 在Mode为Fixed时, Fixed Exposure越高越暗，越低越亮
 Candle | Tungsten | Tungsten | Fluorescent | Daylight(偏向晴天) | Daylight(偏向阴天) | Moonlight
 
 如果将摄像机的白平衡设置为2000K，则相当于将图1灯源识别为白色，后续的灯源都将向冷色调过渡。
+
+````
+视频地址 ./Video/White Balance 效果示范.mp4
+````
 
 `Tips: `  
 **1.Unity中的温度选项好像与开尔文相反.**   
@@ -85,6 +97,10 @@ Candle | Tungsten | Tungsten | Fluorescent | Daylight(偏向晴天) | Daylight(�
 
 Lens Dirt: 这玩意就是糊在镜头上一个Texture
 
+````
+视频地址 ./Video/Bloom 效果示范.mp4
+````
+
 ### 链接
 [Post-Processing-Bloom](https://docs.unity3d.com/Packages/com.unity.render-pipelines.high-definition@7.2/manual/Post-Processing-Bloom.html)
 
@@ -95,6 +111,10 @@ Lens Dirt: 这玩意就是糊在镜头上一个Texture
 黑胶的颗粒感 CD的杂音  
 这是情怀   
 (此话来自[知乎](https://www.zhihu.com/question/38304525/answer/76151272))
+
+````
+视频地址 ./Video/Film Grain 效果示范.mp4
+````
 
 ### 链接
 [Post-Processing-Film-Grain](https://docs.unity3d.com/Packages/com.unity.render-pipelines.high-definition@7.2/manual/Post-Processing-Film-Grain.html)
@@ -108,12 +128,21 @@ Lens Dirt: 这玩意就是糊在镜头上一个Texture
 ## Split Toning
 **快速解读: 根据亮度值对图像的不同区域进行着色(亮的地方为高亮，暗的地方为阴影)**
 
+````
+视频地址 ./Video/Split Toning 效果示范.mp4
+````
+
 ### 链接
 [Post-Processing-Split-Toning](https://docs.unity3d.com/Packages/com.unity.render-pipelines.high-definition@7.2/manual/Post-Processing-Split-Toning.html)
 
 ## Shadows Midtones Highlights
 **快速解读: 根据亮度值将图像中的亮度分为三部分【阴影、中间值、高光】, 用以分别对三部分进行准确性的调整。**
 
+````
+视频地址 
+./Video/Shadows Midtones Highlights 效果示范.mp4
+./Video/Shadows Midtones Highlights 去重现Lift Gamma Gain 的效果.mp4
+````
 
 ### 链接
 [Post-Processing-Shadows-Midtones-Highlights](https://docs.unity3d.com/Packages/com.unity.render-pipelines.high-definition@7.2/manual/Post-Processing-Shadows-Midtones-Highlights.html)
@@ -125,11 +154,19 @@ Lens Dirt: 这玩意就是糊在镜头上一个Texture
 
 `【Shadows Midtones Highlights】比【Lift Gamma Gain】高级一点，前者能复现出后者。前者中Midtones没有像后者Gamma一样的过渡，它是根据亮度一刀砍，但根据曲线可以搞出来过渡效果。`
 
+````
+视频地址 ./Video/Lift Gamma Gain 效果示范.mp4
+````
+
 ### 链接
 [Post-Processing-Lift-Gamma-Gain](https://docs.unity3d.com/Packages/com.unity.render-pipelines.high-definition@7.2/manual/Post-Processing-Lift-Gamma-Gain.html)
 
 ## Lens Distortion
 **快速解读: 实现凸透镜与凹透镜效果的画面扭曲**
+
+````
+视频地址 ./Video/Lens Distortion 效果示范.mp4
+````
 
 ### 链接
 [Post-Processing-Lens-Distortion](https://docs.unity3d.com/Packages/com.unity.render-pipelines.high-definition@7.2/manual/Post-Processing-Lens-Distortion.html)
@@ -142,17 +179,29 @@ Near Blur属性中End参数规定的距离`后面`才是`清晰的图景`，Star
 Far Blur属性中的Start参数规定的距离`前面`才是`清晰的图景`，Start到End之间的距离内的物体是偏向于模糊的，End之后是彻底模糊的。
 **也就是说Near Blur的End到Far Blur的Start之间才是清晰图像，两个Start->End之间都是清晰到模糊的过渡**
 
+````
+视频地址 ./Video/Depth Of Field 效果示范.mp4
+````
+
 ### 链接
 [Post-Processing-Depth-of-Field](https://docs.unity3d.com/Packages/com.unity.render-pipelines.high-definition@7.2/manual/Post-Processing-Depth-of-Field.html)
 
 ## Color Curves
 **快速解读: 控制镜头内颜色的渐变**
 
+````
+视频地址 ./Video/Color Curves 效果示范.mp4
+````
+
 ### 链接
 [Post-Processing-Color-Curves](https://docs.unity3d.com/Packages/com.unity.render-pipelines.high-definition@7.2/manual/Post-Processing-Color-Curves.html)
 
 ## Color Adjustments
 **快速解读: 【颜色校准】 调整最终渲染图像的整体色调，亮度和对比度等内容，可能是用在当其它都设置完成后临时想要进行部分修改使用。**
+
+````
+视频地址 ./Video/Color Adjustments 效果示范.mp4
+````
 
 ### 链接
 [Post-Processing-Color-Adjustments](https://docs.unity3d.com/Packages/com.unity.render-pipelines.high-definition@7.2/manual/Post-Processing-Color-Adjustments.html)
