@@ -63,7 +63,7 @@ Unity 在Mode为Fixed时, Fixed Exposure越高越暗，越低越亮
 ![颜色变化(图片来自下面首个视频链接)](https://upload-images.jianshu.io/upload_images/16156434-84f76b3f1a67af5a.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
 图1 | 图2 | 图3 | 图4 | 图5 | 图6 | 图7 
-- | :-: | :-: | :-: | :-: | :-: | -:
+:- | :-: | :-: | :-: | :-: | :-: | -:
 2000K | 2800K | 3000K | 4500K | 5600K | 6500K | 8000K
 Candle | Tungsten | Tungsten | Fluorescent | Daylight(偏向晴天) | Daylight(偏向阴天) | Moonlight
 
