@@ -12,6 +12,11 @@
 
 Unity 在Mode为Fixed时, Fixed Exposure越高越暗，越低越亮
 
+<video id="video" controls="" preload="none">
+      <source id="mp4" src="./Video/Exposure 效果示范.mp4">
+      <p>Your user agent does not support the HTML5 Video element.</p>
+</video>
+
 `Tips: `   
 **1.在Unity中过曝可以使用Tone mapping处理**  
 **2.在现实中如果想达到某种情况时仍然过曝可以使用滤镜**
