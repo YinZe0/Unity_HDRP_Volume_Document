@@ -1,4 +1,4 @@
-不知道具体对不对，不是专业的摄影人员，这些理论在Unity和Blender中通用
+不知道具体对不对，不是专业的摄影人员，这些理论在Unity和Blender中通用  
 要使用git lfs下载该项目/文档
 
 # Override
